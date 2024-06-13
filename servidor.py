@@ -1,36 +1,39 @@
+# Versiones disponibles
+# forge, mohist, fabric, vanilla, paper
+
+# Puedes instalar mohist después de instalar forge desde el menú de gestionar
+# Puedes instalar paper después de instalar vanilla desde el menú de gestionar
+# Puedes instalar purpur después de instalar fabric desde el menú de gestionar
+
+# Regiones de ngrok
+# Código          Lugar
+#-----------      ---------------------------
+# ap	          Asia / Pacífico (Singapore)
+# au		      Australia (Sydney)
+# eu		      Europa (Frankfurt)
+# in		      India (Mumbai)
+# jp		      Japón (Tokyo)
+# sa		      Sudamérica (São Paulo)
+# us		      Estados unidos (Ohio)
+# us-cal-1	      Estados unidos (California)
 
 
 
 
 
-# Custom version
-# mohist / catserver   Install forge   first
-# purpur               Install fabric  first
-# snapshot             Install vanilla first
-
-# Ngrok region
-# Code           Place
-#-----------     ---------------------------
-# ap	          Asia/Pacific (Singapore)
-# au		  Australia (Sydney)
-# eu		  Europe (Frankfurt)
-# in		  India (Mumbai)
-# jp		  Japan (Tokyo)
-# sa		  South America (São Paulo)
-# us		  United States (Ohio)
-# us-cal-1	  United States (California)
-
-
-
-#comentarios
 
 
 
 
 
+
+
+
+
+# No toques nada de aquí para abajo, puedes dañarlo
 import requests,os,base64
 if not os.path.exists("./.gitignore"):
-	big = "L3dvcmtfYXJlYQ0KL3NlcnZpZG9yX21pbmVjcmFmdA0KL21pbmVjcmFmdF9zZXJ2ZXINCi9zZXJ2aWRvcl9taW5lY3JhZnRfb2xkDQovdGFpbHNjYWxlLWNzDQovdGhhbm9zDQovYmtkaXINCi92ZW5kb3INCmNvbXBvc2VyLioNCmNvbmZpZ3VyYXRpb24uanNvbg0KY29uZmlndXJhY2lvbi5qc29uDQoqLnR4dA0KKi5weWMNCioub3V0cHV0"
+	big = "L1B5dGhvbioNCi93b3JrX2FyZWEqDQovc2Vydmlkb3JfbWluZWNyYWZ0DQovbWluZWNyYWZ0X3NlcnZlcg0KL3NlcnZpZG9yX21pbmVjcmFmdF9vbGQNCi90YWlsc2NhbGUtY3MNCi90aGFub3MNCi9zZXJ2ZXJzDQovYmtkaXINCi92ZW5kb3INCmNvbXBvc2VyLioNCmNvbmZpZ3VyYXRpb24uanNvbg0KY29uZmlndXJhY2lvbi5qc29uDQoqLnR4dA0KKi5weWMNCioubXNwDQoqLm91dHB1dA=="
 	dec = base64.standard_b64decode(big).decode()
 	with open(".gitignore", 'w') as giti:
 		giti.write(dec)
